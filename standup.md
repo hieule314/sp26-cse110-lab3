@@ -4,7 +4,7 @@
 - Date: 4/20/26
 - Time: 11:00am
 - Sprint / Week: #2
-- Facilitator: James V
+- Facilitator: Brandon Le
 
 ## Attendees
 - [ ] Hieu Le
@@ -12,28 +12,28 @@
 - [ ] Brandon Le
 
 ## Status Updates
-### FILL IN
-- Yesterday: Worked on AI slot machine UI
-- Today: Create 5 features for AI slot machine
-- Blockers: Have to walk dogs at 5pm
-- Help Needed: Could use help on feature #2 and #4
+### Hieu Le
+- Yesterday: Updated index.html structure and linked external style.css for Lab 3.
+- Today: Finish remaining CSS checklist coverage (selectors, flex/grid, responsive queries).
+- Blockers: Need final manual verification in browser DevTools for device viewing
+- Help Needed: Quick peer check that every required CSS topic appears at least once.
 
-### FILL IN
-- Yesterday: FILL IN
-- Today: FILL IN
-- Blockers: FILL IN
-- Help Needed: FILL IN
+### Anh Le
+- Yesterday: Drafted standup format and reviewed issue template requirements.
+- Today: Create custom GitHub labels/issues and map each issue to a PR.
+- Blockers: Waiting for final issue titles before creating all issues.
+- Help Needed: Confirm issue to PR links follow lab instructions.
 
 ## Team Priorities
-- [ ] Create feature #1 for AI slot machine
-- [ ] Fix spinning bug
-- [ ] Create feature #5 for AI slot machine
+- [ ] Complete all required CSS checklist items in style.css.
+- [ ] Create relevant Lab 3 GitHub issues with labels and assignee.
+- [ ] Open PRs from feature branches, link issues, and merge after review.
 
 ## Decisions
-- Decision: FILL IN
-- Reason: FILL IN
-- Owner: FILL IN
+- Decision: Split Lab 3 work into styling tasks and GitHub workflow tasks.
+- Reason: Parallel work helps finish both Part 1 (Agile workflow) and Part 2 (CSS) on time.
+- Owner: Brandon Le
 
 ## Follow-ups
-- [ ] FILL IN
-- [ ] FILL IN
+- [ ] Run CSS validator and add screenshot file under screenshots/.
+- [ ] Open PR(s) and include linked issue reference using Closes (# issue number)
