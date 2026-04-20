@@ -2,85 +2,120 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="working on my cse 110 lab 2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSE 110 Lab 3 meeting minutes with CSS styling.">
     <link rel="icon" href="screenshots/akatsuki.png" type="image/png">
-    <title>Hieu Le - CSE 110 Lab 2</title>
-  </head>
-  <body>
-    <header>
-      <h1>Akatsuki Meeting Minutes</h1>
-      <h2>Focusing on Lab 2 Assignment</h2>
-      <h3>April 10th, 2026</h3>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Internal CSS example for quick one-off experiments */
+      .internal-style-demo {
+        outline: 0.15rem dashed var(--brand, #1d4ed8);
+        outline-offset: 0.25rem;
+      }
 
-      <nav>
-        <a href="#attendance">Attendance</a><br>
-        <a href="#agenda">Agenda</a><br>
-        <a href="#unfinished">Unfinished Business</a><br>
-        <a href="#new">New Business</a><br>
-        <a href="#comments">Comments</a><br>
-        <a href="#media">Media</a><br>
-        <a href="#form">Form</a>
+      .internal-style-demo em {
+        text-decoration: underline;
+      }
+    </style>
+    <title>Hieu Le - CSE 110 Lab 3</title>
+  </head>
+  <body id="top">
+    <header class="page-header">
+      <h1>Akatsuki Meeting Minutes</h1>
+      <h2>Focusing on Lab 3 Assignment</h2>
+      <p class="internal-style-demo">Sprint sync update for <em>April 20, 2026</em>.</p>
+
+      <nav aria-label="Section Navigation">
+        <a href="#attendance" data-nav="attendance">Attendance</a>
+        <a href="#agenda" data-nav="agenda">Agenda</a>
+        <a href="#unfinished" data-nav="unfinished">Unfinished Business</a>
+        <a href="#new" data-nav="new">New Business</a>
+        <a href="#comments" data-nav="comments">Comments</a>
+        <a href="#media" data-nav="media">Media</a>
+        <a href="#form" data-nav="form">Form</a>
       </nav>
-      <hr>
     </header>
 
     <main>
-      <section id="attendance">
+      <section id="attendance" class="panel">
         <h2>Attendance</h2>
-        <ul>
+        <p style="background-color: rgba(255, 255, 255, 0.6);">This sentence is styled with inline CSS for debugging.</p>
+        <ul class="attendance-list">
           <li>Hieu Le</li>
           <li>Anh Le</li>
+          <li>Boss man</li>
         </ul>
+        <p class="helper-note">Status <span class="status-pill">On Track</span></p>
+        <p class="hidden-note">Hidden line used to demonstrate display: none.</p>
       </section>
 
-      <section id="agenda">
+      <section id="agenda" class="panel">
         <h2>Agenda</h2>
-        <ol>
-          <li>Do part 1</li>
-          <li>Do part 2</li>
+        <p>Today we are applying every CSS requirement from the lab checklist.</p>
+        <ol class="agenda-list">
+          <li>Set up agile docs and templates.</li>
+          <li>Apply core CSS styling requirements.</li>
+          <li>Test responsive behavior on multiple screen sizes.</li>
         </ol>
       </section>
 
-      <section id="unfinished">
+      <section id="unfinished" class="panel">
         <h2>Unfinished Business</h2>
+        <p>Need to capture CSS validator screenshot and commit it.</p>
         <ul>
-          <li>Commit and submit</li>
+          <li>Finalize issue labeling in GitHub UI.</li>
+          <li>Open pull requests per issue.</li>
         </ul>
       </section>
 
-      <section id="new">
+      <section id="new" class="panel">
         <h2>New Business</h2>
-        <ul>
-          <li>Work on warm up</li>
-        </ul>
-      </section>
+        <p>Added flexbox and grid sections for clearer planning visuals.</p>
 
-      <section id="comments">
-        <h2>Comments / Questions / Concerns</h2>
-        <p>How do I print 'hello world'?</p>
+        <div class="flex-row">
+          <article class="pulse-card">
+            <h3>Yesterday</h3>
+            <p>Drafted standup format and updated meeting content.</p>
+          </article>
+          <article class="pulse-card">
+            <h3>Today</h3>
+            <p>Implement all CSS checklist items and selectors.</p>
+          </article>
+          <article class="pulse-card">
+            <h3>Blockers</h3>
+            <p>Need manual GitHub issue and PR creation for final grading evidence.</p>
+          </article>
+        </div>
 
-        <details>
-          <summary>[Summary]</summary>
-          <p>print("Hello world")</p>
-        </details>
-      </section>
-
-      <section>
-        <h2>Text Elements</h2>
-        <p>This is a <span>normal text</span>.</p>
-        <div>
-          <p><b>this is bold</b></p>
-          <p><strong>this is strong</strong></p>
-          <p><i>this is italic</i></p>
-          <p><em>this is emphasized</em></p>
+        <div class="task-grid" aria-label="Task Priority Grid">
+          <div class="task-item">Create custom labels</div>
+          <div class="task-item">Open issue per task</div>
+          <div class="task-item">Link issue to PR</div>
+          <div class="task-item">Merge reviewed branch</div>
         </div>
       </section>
 
-      <section id="media">
+      <section id="comments" class="panel">
+        <h2>Comments / Questions / Concerns</h2>
+        <p>How do we keep features readable on both mobile and desktop?</p>
+
+        <details>
+          <summary>[Summary]</summary>
+          <p>Use responsive media queries and fluid width values.</p>
+        </details>
+      </section>
+
+      <section id="media" class="panel">
         <h2>Media</h2>
 
         <h3>Diagram / Picture</h3>
-        <img src="screenshots/akatsuki.png" alt="Akatsuki team pic">
+        <img src="screenshots/akatsuki.png" alt="Akatsuki team pic" class="media-preview">
 
         <h3>Audio Recording</h3>
         <audio controls>
@@ -88,16 +123,16 @@
         </audio>
 
         <h3>Video Recording</h3>
-        <video controls width="320">
+        <video controls class="media-preview">
           <source src="doggie.MOV">
         </video>
       </section>
 
-      <section id="form">
-        <h2>google swe application</h2>
+      <section id="form" class="panel">
+        <h2>Application Form</h2>
         <form>
           <fieldset>
-            <legend>google swe internship</legend>
+            <legend>Google SWE Internship</legend>
 
             <p>
               <label for="text-input">Do you want this internship:</label>
@@ -116,24 +151,25 @@
 
             <p>
               <input id="check1" name="check1" type="checkbox">
-              <label for="check1">are you cool</label>
+              <label for="check1">Did you review meeting notes?</label>
             </p>
 
             <p>
               <input id="radio1" name="radio-group" type="radio" value="swag">
-              <label for="radio1">are you swag</label>
+              <label for="radio1">Ready to submit PR?</label>
             </p>
 
             <p>
-              <label for="select-input">Work places:</label>
+              <label for="select-input">Preferred work location:</label>
               <select id="select-input" name="select-input">
                 <option value="Workplace1">Vietnam</option>
                 <option value="Workplace2">San Diego</option>
+                <option value="Workplace3">Remote</option>
               </select>
             </p>
 
             <p>
-              <label for="textarea-input">Why google?:</label><br>
+              <label for="textarea-input">Why Google?:</label><br>
               <textarea id="textarea-input" name="textarea-input"></textarea>
             </p>
 
@@ -144,8 +180,8 @@
     </main>
 
     <footer>
-      <hr>
-      <p>Very bottom of CSE 110 Lab 2!</p>
+      <p>End of CSE 110 Lab 3 page.</p>
+      <a class="back-to-top" href="#top">Back to top</a>
     </footer>
   </body>
 </html>
