@@ -243,6 +243,13 @@ article.pulse-card {
   margin-left: 1rem;
 }
 
+/* Nested selector example for Lab 3 requirement */
+.panel {
+  & .helper-note {
+    font-weight: 600;
+  }
+}
+
 @media screen and (max-width: 900px) {
   nav a {
     margin-bottom: 0.45rem;
