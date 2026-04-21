@@ -35,5 +35,5 @@
 - Owner: Brandon Le
 
 ## Follow-ups
-- [ ] Run CSS validator and add screenshot file under screenshots/.
+- [ ] Run CSS validator 
 - [ ] Open PR(s) and include linked issue reference using Closes (# issue number)
