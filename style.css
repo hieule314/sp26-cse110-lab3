@@ -1,4 +1,3 @@
-/* Global base styles */
 * {
   box-sizing: border-box;
 }
@@ -58,7 +57,7 @@ nav a {
   padding: 0.45em 0.8em 0.45em 0.8em;
   border-radius: 0.35rem;
   background-color: #dcecff;
-  background-color: color-mix(in srgb, #93c5fd 38%, white 62%);
+  background-color: color-mix(in srgb, #93c5fd 38%, white 63%);
 }
 
 a[href^="#"] {
@@ -243,7 +242,7 @@ article.pulse-card {
   margin-left: 1rem;
 }
 
-/* Nested selector example for Lab 3 requirement */
+/* Nested selector */
 .panel {
   & .helper-note {
     font-weight: 600;
