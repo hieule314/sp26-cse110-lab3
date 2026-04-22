@@ -57,7 +57,7 @@ nav a {
   padding: 0.45em 0.8em 0.45em 0.8em;
   border-radius: 0.35rem;
   background-color: #dcecff;
-  background-color: color-mix(in srgb, #93c5fd 38%, white 63%);
+  background-color: color-mix(in srgb, #93c5fd 35%, white 63%);
 }
 
 a[href^="#"] {
